@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="IMPORTec Ayacucho - Sistema de gestión de campañas de contenidos con inteligencia artificial.">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/dashboard.css">
+<link rel="stylesheet" href="css/animations.css">
+<link rel="stylesheet" href="css/responsive.css">
+<title>Reportes | IMPORTec AI Campaign Manager</title>
+</head>
+<body data-page="reports">
+<a class="skip-link" href="#contenido">Saltar al contenido principal</a>
+<div class="app-shell">
+<aside class="sidebar" aria-label="Menú principal">
+<div class="brand-box">
+<img src="assets/logo/importec-logo.png" alt="Logo IMPORTec Ayacucho" class="brand-logo">
+<div><strong>IMPORTec</strong><small>AI Campaign Manager</small></div>
+</div>
+<nav class="main-nav">
+<a class="nav-link" data-page="inicio" href="index.html"><span class="nav-icon">01</span><span>Inicio</span></a>
+<a class="nav-link" data-page="dashboard" href="dashboard.html"><span class="nav-icon">02</span><span>Dashboard</span></a>
+<a class="nav-link" data-page="campaigns" href="campaigns.html"><span class="nav-icon">03</span><span>Campañas</span></a>
+<a class="nav-link" data-page="ai" href="ai-generator.html"><span class="nav-icon">04</span><span>Generador IA</span></a>
+<a class="nav-link" data-page="products" href="products.html"><span class="nav-icon">05</span><span>Productos</span></a>
+<a class="nav-link" data-page="calendar" href="calendar.html"><span class="nav-icon">06</span><span>Calendario</span></a>
+<a class="nav-link" data-page="reports" href="reports.html"><span class="nav-icon">07</span><span>Reportes</span></a>
+<a class="nav-link" data-page="repository" href="repository.html"><span class="nav-icon">08</span><span>Repositorio</span></a>
+<a class="nav-link" data-page="settings" href="settings.html"><span class="nav-icon">09</span><span>Configuración</span></a>
+</nav>
+<div class="sidebar-card">
+<p>Campañas inteligentes para vender tecnología con contenido preciso, visual y medible.</p>
+<a href="ai-generator.html" class="btn btn-primary btn-full">Generar contenido IA</a>
+</div>
+</aside>
+<main class="main-panel" id="contenido">
+<header class="topbar">
+<button class="menu-toggle" aria-label="Abrir menú">☰</button>
+<div>
+<h1>Reportes</h1>
+<p>Gestión profesional de contenidos digitales para IMPORTec Ayacucho.</p>
+</div>
+<div class="topbar-actions">
+<button class="btn btn-ghost" id="themeToggle">Modo</button>
+<a href="campaigns.html" class="btn btn-primary">Nueva campaña</a>
+</div>
+</header>
+<section class="dashboard-grid"><article class="kpi-card"><span>Alcance total</span><strong>125K</strong><small>Proyección trimestral</small></article><article class="kpi-card"><span>Clics</span><strong>9,840</strong><small>Campañas tecnológicas</small></article><article class="kpi-card"><span>Conversiones</span><strong>684</strong><small>Contactos por WhatsApp</small></article><article class="kpi-card"><span>ROI</span><strong>3.8x</strong><small>Retorno estimado</small></article></section><section class="panel-grid"><div class="panel-card"><h2>KPIs por campaña</h2><div id="reportBars" class="chart-bars"></div></div><div class="panel-card"><h2>Lectura ejecutiva</h2><p>Las campañas con mayor potencial combinan video corto, oferta clara, segmentación estudiantil y cierre por WhatsApp Business.</p><ul class="check-list"><li>Priorizar laptops escolares y universitarias.</li><li>Invertir más en campañas con ROI mayor a 3x.</li><li>Optimizar copies con beneficios concretos.</li></ul></div></section><section class="panel-card"><h2>Tabla de métricas</h2><div class="table-wrap"><table><thead><tr><th>Campaña</th><th>Alcance</th><th>Clics</th><th>Ventas</th><th>Engagement</th><th>ROI</th></tr></thead><tbody id="reportRows"></tbody></table></div></section><script src="js/reports.js"></script></main>
+</div>
+<div class="toast-zone" aria-live="polite"></div>
+<div class="modal-backdrop" id="globalModal" aria-hidden="true"><div class="modal-card"><button class="modal-close" aria-label="Cerrar">×</button><div class="modal-content"></div></div></div>
+<script src="js/main.js"></script>
+<script src="js/validation.js"></script>
+</body>
+</html>

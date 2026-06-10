@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="IMPORTec Ayacucho - Sistema de gestión de campañas de contenidos con inteligencia artificial.">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/dashboard.css">
+<link rel="stylesheet" href="css/animations.css">
+<link rel="stylesheet" href="css/responsive.css">
+<title>Generador IA | IMPORTec AI Campaign Manager</title>
+</head>
+<body data-page="ai">
+<a class="skip-link" href="#contenido">Saltar al contenido principal</a>
+<div class="app-shell">
+<aside class="sidebar" aria-label="Menú principal">
+<div class="brand-box">
+<img src="assets/logo/importec-logo.png" alt="Logo IMPORTec Ayacucho" class="brand-logo">
+<div><strong>IMPORTec</strong><small>AI Campaign Manager</small></div>
+</div>
+<nav class="main-nav">
+<a class="nav-link" data-page="inicio" href="index.html"><span class="nav-icon">01</span><span>Inicio</span></a>
+<a class="nav-link" data-page="dashboard" href="dashboard.html"><span class="nav-icon">02</span><span>Dashboard</span></a>
+<a class="nav-link" data-page="campaigns" href="campaigns.html"><span class="nav-icon">03</span><span>Campañas</span></a>
+<a class="nav-link" data-page="ai" href="ai-generator.html"><span class="nav-icon">04</span><span>Generador IA</span></a>
+<a class="nav-link" data-page="products" href="products.html"><span class="nav-icon">05</span><span>Productos</span></a>
+<a class="nav-link" data-page="calendar" href="calendar.html"><span class="nav-icon">06</span><span>Calendario</span></a>
+<a class="nav-link" data-page="reports" href="reports.html"><span class="nav-icon">07</span><span>Reportes</span></a>
+<a class="nav-link" data-page="repository" href="repository.html"><span class="nav-icon">08</span><span>Repositorio</span></a>
+<a class="nav-link" data-page="settings" href="settings.html"><span class="nav-icon">09</span><span>Configuración</span></a>
+</nav>
+<div class="sidebar-card">
+<p>Campañas inteligentes para vender tecnología con contenido preciso, visual y medible.</p>
+<a href="ai-generator.html" class="btn btn-primary btn-full">Generar contenido IA</a>
+</div>
+</aside>
+<main class="main-panel" id="contenido">
+<header class="topbar">
+<button class="menu-toggle" aria-label="Abrir menú">☰</button>
+<div>
+<h1>Generador IA</h1>
+<p>Gestión profesional de contenidos digitales para IMPORTec Ayacucho.</p>
+</div>
+<div class="topbar-actions">
+<button class="btn btn-ghost" id="themeToggle">Modo</button>
+<a href="campaigns.html" class="btn btn-primary">Nueva campaña</a>
+</div>
+</header>
+<section class="ai-lab reveal"><div class="panel-card"><h2>Generador de contenidos con IA</h2><p>Ingrese los datos de la campaña y el sistema generará textos comerciales simulados para IMPORTec Ayacucho.</p>
+<form id="aiForm" class="form-grid" novalidate>
+<label>Producto o servicio<input name="product" required placeholder="Laptop Core i7, SSD 512GB"></label>
+<label>Objetivo de campaña<select name="goal" required><option>Vender</option><option>Promocionar</option><option>Informar</option><option>Fidelizar</option></select></label>
+<label>Tono de comunicación<select name="tone" required><option>Profesional</option><option>Juvenil</option><option>Urgente</option><option>Educativo</option><option>Premium</option></select></label>
+<label>Público objetivo<input name="audience" required placeholder="Universitarios de Ayacucho"></label>
+<label>Canal digital<select name="channel" required><option>Facebook</option><option>Instagram</option><option>TikTok</option><option>WhatsApp Business</option><option>Página web</option></select></label>
+<label>Promoción<input name="offer" placeholder="Descuento, garantía o combo"></label>
+<div class="form-actions"><button class="btn btn-primary" type="submit">Generar propuesta</button><button class="btn btn-secondary" type="button" id="copyAI">Copiar resultado</button></div>
+</form></div><div class="panel-card ai-output-card"><h2>Resultado IA</h2><div id="aiOutput" class="ai-output"><p>Complete el formulario para obtener titulares, copy, hashtags y CTA.</p></div></div></section>
+<script src="js/ai-generator.js"></script></main>
+</div>
+<div class="toast-zone" aria-live="polite"></div>
+<div class="modal-backdrop" id="globalModal" aria-hidden="true"><div class="modal-card"><button class="modal-close" aria-label="Cerrar">×</button><div class="modal-content"></div></div></div>
+<script src="js/main.js"></script>
+<script src="js/validation.js"></script>
+</body>
+</html>

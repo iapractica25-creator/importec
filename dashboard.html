@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="IMPORTec Ayacucho - Sistema de gestión de campañas de contenidos con inteligencia artificial.">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/dashboard.css">
+<link rel="stylesheet" href="css/animations.css">
+<link rel="stylesheet" href="css/responsive.css">
+<title>Dashboard | IMPORTec AI Campaign Manager</title>
+</head>
+<body data-page="dashboard">
+<a class="skip-link" href="#contenido">Saltar al contenido principal</a>
+<div class="app-shell">
+<aside class="sidebar" aria-label="Menú principal">
+<div class="brand-box">
+<img src="assets/logo/importec-logo.png" alt="Logo IMPORTec Ayacucho" class="brand-logo">
+<div><strong>IMPORTec</strong><small>AI Campaign Manager</small></div>
+</div>
+<nav class="main-nav">
+<a class="nav-link" data-page="inicio" href="index.html"><span class="nav-icon">01</span><span>Inicio</span></a>
+<a class="nav-link" data-page="dashboard" href="dashboard.html"><span class="nav-icon">02</span><span>Dashboard</span></a>
+<a class="nav-link" data-page="campaigns" href="campaigns.html"><span class="nav-icon">03</span><span>Campañas</span></a>
+<a class="nav-link" data-page="ai" href="ai-generator.html"><span class="nav-icon">04</span><span>Generador IA</span></a>
+<a class="nav-link" data-page="products" href="products.html"><span class="nav-icon">05</span><span>Productos</span></a>
+<a class="nav-link" data-page="calendar" href="calendar.html"><span class="nav-icon">06</span><span>Calendario</span></a>
+<a class="nav-link" data-page="reports" href="reports.html"><span class="nav-icon">07</span><span>Reportes</span></a>
+<a class="nav-link" data-page="repository" href="repository.html"><span class="nav-icon">08</span><span>Repositorio</span></a>
+<a class="nav-link" data-page="settings" href="settings.html"><span class="nav-icon">09</span><span>Configuración</span></a>
+</nav>
+<div class="sidebar-card">
+<p>Campañas inteligentes para vender tecnología con contenido preciso, visual y medible.</p>
+<a href="ai-generator.html" class="btn btn-primary btn-full">Generar contenido IA</a>
+</div>
+</aside>
+<main class="main-panel" id="contenido">
+<header class="topbar">
+<button class="menu-toggle" aria-label="Abrir menú">☰</button>
+<div>
+<h1>Dashboard</h1>
+<p>Gestión profesional de contenidos digitales para IMPORTec Ayacucho.</p>
+</div>
+<div class="topbar-actions">
+<button class="btn btn-ghost" id="themeToggle">Modo</button>
+<a href="campaigns.html" class="btn btn-primary">Nueva campaña</a>
+</div>
+</header>
+<section class="dashboard-grid"><article class="kpi-card reveal"><span>Campañas activas</span><strong data-count="14">0</strong><small>En Facebook, TikTok y WhatsApp</small></article>
+<article class="kpi-card reveal"><span>Publicaciones programadas</span><strong data-count="48">0</strong><small>Calendario del mes</small></article>
+<article class="kpi-card reveal"><span>Alcance estimado</span><strong data-count="38200">0</strong><small>Usuarios proyectados</small></article>
+<article class="kpi-card reveal"><span>Ventas atribuidas</span><strong data-count="127">0</strong><small>Consultas convertidas</small></article>
+<article class="kpi-card reveal"><span>Presupuesto usado S/</span><strong data-count="8640">0</strong><small>Inversión simulada</small></article>
+<article class="kpi-card reveal"><span>Engagement %</span><strong data-count="8">0</strong><small>Promedio mensual</small></article>
+</section>
+<section class="panel-grid">
+<div class="panel-card reveal"><h2>Rendimiento por canal</h2><div class="chart-bars" id="channelBars"></div></div>
+<div class="panel-card reveal"><h2>Actividades recientes</h2><ul class="timeline" id="activityTimeline"></ul></div>
+</section>
+<section class="panel-card reveal"><h2>Campañas prioritarias</h2><div class="table-wrap"><table><thead><tr><th>Campaña</th><th>Canal</th><th>Objetivo</th><th>Estado</th><th>ROI</th></tr></thead><tbody id="campaignSummary"></tbody></table></div></section>
+<script src="js/reports.js"></script></main>
+</div>
+<div class="toast-zone" aria-live="polite"></div>
+<div class="modal-backdrop" id="globalModal" aria-hidden="true"><div class="modal-card"><button class="modal-close" aria-label="Cerrar">×</button><div class="modal-content"></div></div></div>
+<script src="js/main.js"></script>
+<script src="js/validation.js"></script>
+</body>
+</html>
